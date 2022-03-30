@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: .8rem;
+}
+
+.pokemon {
+  &__item {
+      margin-bottom: 2rem;
+    }
+    &__texts {
+      font-size: .8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__order {
+      color: green;
+      font-weight: bold;
+      &::before {
+        content: '#';
+      }
+    }
+    &__name {
+      position: absolute;
+      bottom: 0;
+      font-weight: bold;
+    }
+    &__types {
+      color: darkgray
+    }
+}
+svg {
+  display: block;
+}

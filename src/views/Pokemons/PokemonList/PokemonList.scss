@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: .8rem;
+}
+
+.pokemon {
+  &__item {
+      margin-bottom: 2rem;
+    }
+    &__order {
+      color: goldenrod;
+      font-weight: bold;
+      &::before {
+        content: '#';
+      }
+    }
+    &__name {
+      font-weight: bold;
+    }
+    &__types {
+      color: darkgray
+    }
+}

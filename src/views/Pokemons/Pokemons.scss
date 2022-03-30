@@ -1,0 +1,29 @@
+.pokemon-view {
+    &__filters {
+      .text-filter {
+        width: 18rem;
+        height: 2rem;
+        background-color: lightyellow;
+        border-radius: .5rem;
+        padding-left: .5rem;
+      }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        .pokemon__item {
+            border-radius: 5px;
+            cursor: pointer;
+  
+            &:hover {
+                background: rgba(grey, 0.1);
+                transform: scale(1.2);
+            }
+        }
+      }
+}
+
+
+
+  

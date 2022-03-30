@@ -1,0 +1,61 @@
+
+.pokemon-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    &:hover {
+      filter: brightness(0.9);
+  }
+    &__board {
+      border: 3px dashed red;
+      border-radius: .5rem;
+      align-self: center;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    &__img {
+      width: 10rem;
+      height: 10rem;
+
+    }
+    &__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        list-style: none;
+        text-align: left;
+        li:not(:last-child) {
+          margin-bottom: .2rem;
+        }
+      }
+    }
+
+    &__back {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: olivedrab;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        max-width: 5rem;
+        margin-top: 1rem;
+    }
+}
+
+.pokemon-suggestions {
+  margin: .5rem;
+  font-size: 1.5rem;
+}
